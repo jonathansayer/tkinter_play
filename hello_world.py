@@ -1,4 +1,4 @@
-from Tkinter import *
+from Tkinter import Tk, Frame,BOTH
 
 class Example(Frame):
 
