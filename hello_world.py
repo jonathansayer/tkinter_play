@@ -1,4 +1,5 @@
 from Tkinter import *
+from ttk import Button, Style
 
 
 class Example(Frame):
@@ -6,9 +7,18 @@ class Example(Frame):
     def __init__(self,parent):
         Frame.__init__(self,parent,background ="white")
         self.parent = parent
-        self.parent.title("Simple")
-        self.pack(fill=BOTH, expand = 1)
         self.centerWindow()
+        self.initUI()
+
+    def initUI(self):
+        self.parent.title("Quit Button")
+        self.style = Style()
+        self.style.theme_use("default")
+
+        self.pack(fill=BOTH, expand = 1)
+
+        quitButton = Button(self, text="Quit", command = self.quit)
+        quitButton.place(x = 50, y = 50)
 
     def centerWindow(self):
         w = 290
