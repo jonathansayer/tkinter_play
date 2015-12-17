@@ -1,4 +1,5 @@
-from Tkinter import Tk, Frame,BOTH
+from Tkinter import *
+
 
 class Example(Frame):
 
@@ -12,13 +13,10 @@ class Example(Frame):
     def centerWindow(self):
         w = 290
         h = 150
-
         sw = self.parent.winfo_screenwidth()
         sh = self.parent.winfo_screenheight()
-
         x = (sw - w)/2
         y = (sh - h)/2
-
         self.parent.geometry("%dx%d+%d+%d" % (w,h,x,y))
 
 
