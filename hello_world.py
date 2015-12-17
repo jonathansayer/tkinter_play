@@ -16,9 +16,6 @@ class Example(Frame):
         sw = self.parent.winfo_screenwidth()
         sh = self.parent.winfo_screenheight()
 
-        print sw
-        print sh
-
         x = (sw - w)/2
         y = (sh - h)/2
 
