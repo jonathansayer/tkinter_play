@@ -8,17 +8,24 @@ class Example(Frame):
         Frame.__init__(self,parent,background ="white")
         self.parent = parent
         self.centerWindow()
+        self.createButtons()
         self.initUI()
 
     def initUI(self):
         self.parent.title("Quit Button")
         self.style = Style()
         self.style.theme_use("default")
-
         self.pack(fill=BOTH, expand = 1)
 
+
+    def createButtons(self):
+        helloButton = Button(self, text = "Hello", command = self.printHello)
+        helloButton.place(x = 100, y = 100)
         quitButton = Button(self, text="Quit", command = self.quit)
         quitButton.place(x = 50, y = 50)
+
+    def printHello(self):
+        print "Hello World"
 
     def centerWindow(self):
         w = 290
