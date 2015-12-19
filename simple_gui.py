@@ -1,4 +1,4 @@
-from Tkinter import *
+from Tkinter import Tk, BOTH, Frame
 from ttk import Button, Style
 
 
