@@ -17,6 +17,10 @@ class Example(Frame):
         self.rowconfigure(3, weight = 1)
         self.rowconfigure(5, pad = 5)
 
+        lbl = Label(self, text = "Windows")
+        lbl.grid(sticky = W, pady = 4, padx = 5)
+
+
 
 
 def main():
