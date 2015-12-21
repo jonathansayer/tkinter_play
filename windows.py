@@ -1,4 +1,4 @@
-from Tkinter import Tk, Text, BOTH
+from Tkinter import Tk, Text, BOTH, W, N , E, W
 from ttk import Frame, Button, Label, Style
 
 class Example(Frame):
@@ -17,7 +17,7 @@ class Example(Frame):
         self.rowconfigure(3, weight = 1)
         self.rowconfigure(5, pad = 5)
 
-        
+
 
 def main():
     root = Tk()
