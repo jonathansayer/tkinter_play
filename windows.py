@@ -23,6 +23,18 @@ class Example(Frame):
         area = Text(self)
         area.grid(row = 1, column = 0, columnspan = 2, rowspan = 4, padx = 5, sticky=W+S+N+E)
 
+        abtn = Button(self, text = "Activate")
+        abtn.grid(row = 1, column = 3)
+
+        cbtn = Button(self, text = "Close")
+        cbtn.grid(row = 2, column = 3, pady = 4)
+
+        hbtn = Button(self, text = "Help")
+        hbtn.grid(row = 5, column = 0, padx = 5)
+
+        obtn = Button(self, text = "OK")
+        obtn.grid(row = 5, column = 3)
+
 
 
 
