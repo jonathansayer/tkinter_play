@@ -28,6 +28,9 @@ class Example(Frame):
         frame3 = Frame(self)
         frame3.pack(fill = X, expand = True)
 
+        lbl3 = Label(frame3 , text = "Review", width = 6)
+        lbl3.pack(side = LEFT, anchor = N, padx = 5, pady = 5)
+
 
 
 
