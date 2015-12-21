@@ -17,7 +17,7 @@ class Example(Frame):
         self.columnconfigure(0, pad = 3)
         self.columnconfigure(1, pad = 3)
         self.columnconfigure(2, pad = 3)
-        self.columnconfigure(3, pad = 4)
+        self.columnconfigure(3, pad = 3)
 
         self.rowconfigure(0, pad = 3)
         self.rowconfigure(1, pad = 3)
@@ -29,6 +29,8 @@ class Example(Frame):
         entry.grid(row = 0, columnspan = 4, sticky = W + E)
         clear = Button(self, text = 'Cls')
         clear.grid(row = 1, column = 0)
+        bck = Button(self, text = "Bck")
+        bck.grid(row = 1, column = 1)
 
         self.pack()
 
