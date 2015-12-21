@@ -14,6 +14,20 @@ class Example(Frame):
 
         Style().configure("TButton", padding = (0,5,0,5), font = 'serif 10')
 
+        self.columnconfigure(0, pad = 3)
+        self.columnconfigure(1, pad = 3)
+        self.columnconfigure(2, pad = 3)
+        self.columnconfigure(3, pad = 4)
+
+        self.rowconfigure(0, pad = 3)
+        self.rowconfigure(1, pad = 3)
+        self.rowconfigure(2, pad = 3)
+        self.rowconfigure(3, pad = 3)
+        self.rowconfigure(4, pad = 3)
+
+        entry = Entry(self)
+        entry.grid(row = 0, columnspan = 4, sticky = W + E)
+
         self.pack()
 
 def main():
