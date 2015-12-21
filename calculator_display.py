@@ -54,7 +54,23 @@ class Example(Frame):
         six.grid(row = 3, column = 2)
         mul.grid(row = 3, column = 3)
 
+        one = Button(self, text = "1")
+        two = Button(self, text = "2")
+        thr = Button(self, text = "3")
+        sub = Button(self, text = "-")
+        one.grid(row = 4, column = 0)
+        two.grid(row = 4, column = 1)
+        thr.grid(row = 4, column = 2)
+        sub.grid(row = 4, column = 3)
 
+        zer = Button(self, text = "0")
+        dec = Button(self, text = ".")
+        equ = Button(self, text = "=")
+        pls = Button(self, text = "+")
+        zer.grid(row = 5, column = 0)
+        dec.grid(row = 5, column = 1)
+        equ.grid(row = 5, column = 2)
+        pls.grid(row = 5, column = 3)
 
         self.pack()
 
