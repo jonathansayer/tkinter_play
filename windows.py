@@ -17,7 +17,7 @@ class Example(Frame):
         self.rowconfigure(3, weight = 1)
         self.rowconfigure(5, pad = 5)
 
-        self.pack()
+        
 
 def main():
     root = Tk()
