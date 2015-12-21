@@ -37,6 +37,9 @@ class Example(Frame):
         lbl3 = Label(frame3 , text = "Review", width = 6)
         lbl3.pack(side = LEFT, anchor = N, padx = 5, pady = 5)
 
+        txt = Text(frame3)
+        txt.pack(fill = X, padx = 5, pady = 5, expand = True)
+
 
 
 
