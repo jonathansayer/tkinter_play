@@ -19,9 +19,9 @@ class Example(Frame):
         self.pack(fill = BOTH, expand = True)
 
         closeButton = Button(self, text = "Close")
-        closeButton.pack(side=RIGHT, padx=5, pady=5)
+        closeButton.pack(side = RIGHT, padx=5, pady=5)
         okButton = Button(self, text = "OK")
-        okButton.pack(side=RIGHT)
+        okButton.pack(side = RIGHT)
 
 
 def main():
