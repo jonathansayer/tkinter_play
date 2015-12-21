@@ -22,7 +22,8 @@ class Example(Frame):
         frame2 = Frame(self)
         frame2.pack(fill = X)
 
-        
+        lbl2 = Label(frame2, text = "Author", width = 6)
+        lbl2.pack(side = LEFT, padx = 5, pady = 5)
 
 
 def main():
