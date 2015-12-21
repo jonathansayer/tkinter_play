@@ -19,6 +19,9 @@ class Example(Frame):
         lbl1 = Label(frame1, text = "Title", width = 6)
         lbl1.pack(side = LEFT, padx = 5, pady = 5)
 
+        entry1 = Entry(frame1)
+        entry1.pack(fill = X, padx = 5, expand = True)
+
         frame2 = Frame(self)
         frame2.pack(fill = X)
 
