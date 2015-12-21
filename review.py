@@ -28,6 +28,9 @@ class Example(Frame):
         lbl2 = Label(frame2, text = "Author", width = 6)
         lbl2.pack(side = LEFT, padx = 5, pady = 5)
 
+        entry2 = Entry(frame2)
+        entry2.pack(fill = X, padx = 5, expand = True)
+
         frame3 = Frame(self)
         frame3.pack(fill = X, expand = True)
 
