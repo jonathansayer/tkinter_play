@@ -1,4 +1,4 @@
-from PILL import Image, ImageTk
+from PIL import Image, ImageTk
 from Tkinter import Tk, Label, BOTH
 from ttk import Frame, Style
 
