@@ -39,9 +39,22 @@ class Example(Frame):
         sev = Button(self, text = "7")
         eig = Button(self, text = "8")
         nin = Button(self, text = "9")
+        div = Button(self, text = "/")
         sev.grid(row = 2, column = 0)
         eig.grid(row = 2, column = 1)
         nin.grid(row = 2, column = 2)
+        div.grid(row = 2, column = 3)
+
+        four = Button(self, text = "4")
+        five = Button(self, text = "5")
+        six = Button(self, text = "6")
+        mul = Button(self, text = "*")
+        four.grid(row = 3, column = 0)
+        five.grid(row = 3, column = 1)
+        six.grid(row = 3, column = 2)
+        mul.grid(row = 3, column = 3)
+
+
 
         self.pack()
 
