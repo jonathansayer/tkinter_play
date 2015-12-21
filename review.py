@@ -25,6 +25,11 @@ class Example(Frame):
         lbl2 = Label(frame2, text = "Author", width = 6)
         lbl2.pack(side = LEFT, padx = 5, pady = 5)
 
+        frame3 = Frame(self)
+        frame3.pack(fill = X, expand = True)
+
+
+
 
 def main():
     root = Tk()
