@@ -13,11 +13,16 @@ class Example(Frame):
         self.parent.title("Review")
         self.pack(fill = BOTH, expand = True)
 
-        frame1 = Frame(self,)
+        frame1 = Frame(self)
         frame1.pack(fill = X)
 
         lbl1 = Label(frame1, text = "Title", width = 6)
         lbl1.pack(side = LEFT, padx = 5, pady = 5)
+
+        frame2 = Frame(self)
+        frame2.pack(fill = X)
+
+        
 
 
 def main():
