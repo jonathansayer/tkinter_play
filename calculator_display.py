@@ -36,6 +36,13 @@ class Example(Frame):
         close = Button(self, text = "Close")
         close.grid(row = 1, column = 3)
 
+        sev = Button(self, text = "7")
+        eig = Button(self, text = "8")
+        nin = Button(self, text = "9")
+        sev.grid(row = 2, column = 0)
+        eig.grid(row = 2, column = 1)
+        nin.grid(row = 2, column = 2)
+
         self.pack()
 
 def main():
