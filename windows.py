@@ -1,4 +1,4 @@
-from Tkinter import Tk, Text, BOTH, W, N , E, W
+from Tkinter import Tk, Text, BOTH, W, N , E, S
 from ttk import Frame, Button, Label, Style
 
 class Example(Frame):
@@ -20,13 +20,15 @@ class Example(Frame):
         lbl = Label(self, text = "Windows")
         lbl.grid(sticky = W, pady = 4, padx = 5)
 
+        area = Text(self)
+        area.grid(row = 1, column = 0, columnspan = 2, rowspan = 4, padx = 5, sticky=W+S+N+E)
+
 
 
 
 def main():
     root = Tk()
     app = Example(root)
-    root.geometry("300x200+300+300")
     root.mainloop()
 
 if __name__ == "__main__":
