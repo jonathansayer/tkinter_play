@@ -27,6 +27,8 @@ class Example(Frame):
 
         entry = Entry(self)
         entry.grid(row = 0, columnspan = 4, sticky = W + E)
+        clear = Button(self, text = 'Cls')
+        clear.grid(row = 1, column = 0)
 
         self.pack()
 
