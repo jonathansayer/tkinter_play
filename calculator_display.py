@@ -31,12 +31,15 @@ class Example(Frame):
         clear.grid(row = 1, column = 0)
         bck = Button(self, text = "Bck")
         bck.grid(row = 1, column = 1)
+        lbl = Button(self)
+        lbl.grid(row = 1, column = 2)
+        close = Button(self, text = "Close")
+        close.grid(row = 1, column = 3)
 
         self.pack()
 
 def main():
     root = Tk()
-    root.geometry("300x200+300+300")
     app = Example(root)
     root.mainloop()
 
