@@ -10,10 +10,8 @@ class Example(Frame):
     def initUI(self):
 
         self.parent.title("Simple Menu")
-
         menubar = Menu(self.parent)
         self.parent.config(menu = menubar)
-
         filemenu = Menu(menubar)
         filemenu.add_command(label = "Exit", command = self.onExit)
         menubar.add_cascade(label = "File", menu = filemenu)
