@@ -17,9 +17,14 @@ class Example(Frame):
 
         error = Button(self, text = "Error", command = self.onError)
         error.grid(padx = 5, pady = 5)
+        warning = Button(self, text = "Warning", command = self.onWarn)
+        warning.grid(row = 1, column = 0)
 
     def onError(self):
         mbox.showerror("Error", "Could not open file")
+
+    def onWarn(self):
+        mbox.showwarning("Warning", "Deprecated function call")
 
 
 def main():
