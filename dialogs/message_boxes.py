@@ -21,7 +21,7 @@ class Example(Frame):
 
 def main():
     root = Tk()
-    app = Example()
+    app = Example(root)
     root.geometry("300x150+300+300")
     root.mainloop()
 
