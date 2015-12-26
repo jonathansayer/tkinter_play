@@ -21,6 +21,8 @@ class Example(Frame):
         warning.grid(row = 1, column = 0)
         question = Button(self, text = "Question", command = self.onQuest)
         question.grid(row = 0, column = 1)
+        inform = Button(self, text = "Information", command = self.onInfo)
+        inform.grid(row = 1, column = 1)
 
     def onError(self):
         mbox.showerror("Error", "Could not open file")
@@ -30,6 +32,9 @@ class Example(Frame):
 
     def onQuest(self):
         mbox.askquestion("Question", "Are you sure you want to quit?")
+
+    def onInfo(self):
+        mbox.showinfo("Information", "Download Complete")
 
 
 
