@@ -19,12 +19,18 @@ class Example(Frame):
         error.grid(padx = 5, pady = 5)
         warning = Button(self, text = "Warning", command = self.onWarn)
         warning.grid(row = 1, column = 0)
+        question = Button(self, text = "Question", command = self.onQuest)
+        question.grid(row = 0, column = 1)
 
     def onError(self):
         mbox.showerror("Error", "Could not open file")
 
     def onWarn(self):
         mbox.showwarning("Warning", "Deprecated function call")
+
+    def onQuest(self):
+        mbox.askquestion("Question", "Are you sure you want to quit?")
+
 
 
 def main():
