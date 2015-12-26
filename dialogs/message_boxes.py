@@ -18,6 +18,9 @@ class Example(Frame):
         error = Button(self, text = "Error", command = self.onError)
         error.grid(padx = 5, pady = 5)
 
+    def onError(self):
+        mbox.showerror("Error", "Could not open file")
+
 
 def main():
     root = Tk()
