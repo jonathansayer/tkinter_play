@@ -15,6 +15,7 @@ class Example(Frame):
         canvas.create_oval(10, 10, 80, 80, outline = "gray", fill = "gray", width = 2)
         canvas.create_oval(110, 10, 210, 80, outline = "gray", fill = "gray", width = 2)
         canvas.create_rectangle(230, 10, 290, 60, outline = "gray", fill = "red", width = 5)
+        canvas.create_arc(30, 200, 90, 100, start = 0, extent = 210, outline = "gray", fill = "gray", width = 2)
 
         canvas.pack(fill = BOTH, expand = 1)
 
