@@ -14,7 +14,7 @@ class Example(Frame):
         canvas = Canvas(self)
         canvas.create_oval(10, 10, 80, 80, outline = "gray", fill = "gray", width = 2)
         canvas.create_oval(110, 10, 210, 80, outline = "gray", fill = "gray", width = 2)
-        canvas.create_rectangle(230, 10, 290, 60, outline = "gray", fill = "gray", width = 2)
+        canvas.create_rectangle(230, 10, 290, 60, outline = "gray", fill = "red", width = 5)
 
         canvas.pack(fill = BOTH, expand = 1)
 
